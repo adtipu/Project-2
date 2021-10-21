@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Website Using HTML And CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <video src="https://www.youtube.com/watch?v=zmun7JzWGPE">Youtube Vide Link</video> -->
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <img src="images/logo.png" alt="" class="logo">
+            <div class="header-text">
+                <h1>the Purpose is to <br> teach, bring learn to people</h1>
+                <span class="square"></span>
+                <p>maiores quia at iure a minima officiis dolorum! Repudiandae exercitationem debitis cum enim sequi sapiente laboriosam ullam odio, velit laborum aut ea aliquid voluptates laudantium numquam. Temporibus, enim. Rerum aspernatur nulla minima quidem error, blanditiis voluptas?</p>
+                <button class="common-btn">Read More</button>
+                <div class="line">
+                    <span class="line-1"></span> <br>
+                    <span class="line-2"></span> <br>
+                    <span class="line-3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <nav id="sideNav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">FEATURES</a></li>
+            <li><a href="#">COURSES</a></li>
+            <li><a href="#">OFFER</a></li>
+            <li><a href="#">CONTACT</a></li> 
+        </ul>
+    </nav>
+    <img src="images/menu.png" id="menuBtn">
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        
+        sideNav.style.right ="-250px";
+        menuBtn.onclick = function(){
+            if(sideNav.style.right =="-250px"){
+            sideNav.style.right ="0";
+        }
+            else{
+                sideNav.style.right="-250px";
+            }
+        }
+    </script>
+</body> 
+</html>
